@@ -36,6 +36,7 @@ import { useMaterialUIController, setMiniSidenav, setOpenConfigurator } from "co
 // Images
 import brandWhite from "assets/images/logo-ct.png";
 import brandDark from "assets/images/logo-ct-dark.png";
+import { ChatBubble, Settings } from "@mui/icons-material";
 
 export default function App() {
   const [controller, dispatch] = useMaterialUIController();
@@ -124,9 +125,7 @@ export default function App() {
       sx={{ cursor: "pointer" }}
       onClick={handleConfiguratorOpen}
     >
-      <Icon fontSize="small" color="inherit">
-        settings
-      </Icon>
+     <ChatBubble/>
     </MDBox>
   );
 
