@@ -1,14 +1,22 @@
 import React from 'react';
-import ReactDOM from 'react-dom/client';
 import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
+import { createRoot } from "react-dom/client";
+import { BrowserRouter } from "react-router-dom";
 
-const root = ReactDOM.createRoot(document.getElementById('root'));
+// Material Dashboard 2 React Context Provider
+import { MaterialUIControllerProvider } from "context";
+
+const container = document.getElementById("root");
+const root = createRoot(container);
+
 root.render(
-  <React.StrictMode>
-    <App />
-  </React.StrictMode>
+  <BrowserRouter>
+    <MaterialUIControllerProvider>
+      <App />
+    </MaterialUIControllerProvider>
+  </BrowserRouter>
 );
 
 // If you want to start measuring performance in your app, pass a function
