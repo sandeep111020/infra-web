@@ -122,7 +122,7 @@ function Dashboard() {
               <MDBox mb={3}>
                 <ReportsLineChart
                   color="dark"
-                  title="SSC Pass Analysis"
+                  title="Graduation Pass Analysis"
                   description="Last Campaign Performance"
                   date="just updated"
                   chart={tasks}

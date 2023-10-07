@@ -17,6 +17,7 @@ import DataTable from "examples/Tables/DataTable";
 
 // Data
 import data from "layouts/dashboard/components/Projects/data";
+import { DoneOutline, MoreVert } from "@mui/icons-material";
 
 function Projects() {
   const { columns, rows } = data();
@@ -54,24 +55,14 @@ function Projects() {
             Projects
           </MDTypography>
           <MDBox display="flex" alignItems="center" lineHeight={0}>
-            <Icon
-              sx={{
-                fontWeight: "bold",
-                color: ({ palette: { info } }) => info.main,
-                mt: -0.5,
-              }}
-            >
-              done
-            </Icon>
+            <DoneOutline/>
             <MDTypography variant="button" fontWeight="regular" color="text">
               &nbsp;<strong>30 done</strong> this month
             </MDTypography>
           </MDBox>
         </MDBox>
         <MDBox color="text" px={2}>
-          <Icon sx={{ cursor: "pointer", fontWeight: "bold" }} fontSize="small" onClick={openMenu}>
-            more_vert
-          </Icon>
+          <MoreVert onClick={openMenu}/>
         </MDBox>
         {renderMenu}
       </MDBox>

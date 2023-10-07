@@ -25,6 +25,7 @@ import MDPagination from "components/MDPagination";
 // Material Dashboard 2 React example components
 import DataTableHeadCell from "examples/Tables/DataTable/DataTableHeadCell";
 import DataTableBodyCell from "examples/Tables/DataTable/DataTableBodyCell";
+import { ChevronLeft, ChevronRight } from "@mui/icons-material";
 
 function DataTable({
   entriesPerPage,
@@ -230,7 +231,7 @@ function DataTable({
           >
             {canPreviousPage && (
               <MDPagination item onClick={() => previousPage()}>
-                <Icon sx={{ fontWeight: "bold" }}>chevron_left</Icon>
+                <ChevronLeft/>
               </MDPagination>
             )}
             {renderPagination.length > 6 ? (
@@ -246,7 +247,7 @@ function DataTable({
             )}
             {canNextPage && (
               <MDPagination item onClick={() => nextPage()}>
-                <Icon sx={{ fontWeight: "bold" }}>chevron_right</Icon>
+                <ChevronRight/>
               </MDPagination>
             )}
           </MDPagination>

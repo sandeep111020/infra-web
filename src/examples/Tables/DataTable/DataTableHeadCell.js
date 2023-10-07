@@ -11,6 +11,7 @@ import MDBox from "components/MDBox";
 
 // Material Dashboard 2 React contexts
 import { useMaterialUIController } from "context";
+import { ArrowDropDown, ArrowDropUp } from "@mui/icons-material";
 
 function DataTableHeadCell({ width, children, sorted, align, ...rest }) {
   const [controller] = useMaterialUIController();
@@ -57,7 +58,7 @@ function DataTableHeadCell({ width, children, sorted, align, ...rest }) {
               color={sorted === "asce" ? "text" : "secondary"}
               opacity={sorted === "asce" ? 1 : 0.5}
             >
-              <Icon>arrow_drop_up</Icon>
+              <ArrowDropUp/>
             </MDBox>
             <MDBox
               position="absolute"
@@ -65,7 +66,7 @@ function DataTableHeadCell({ width, children, sorted, align, ...rest }) {
               color={sorted === "desc" ? "text" : "secondary"}
               opacity={sorted === "desc" ? 1 : 0.5}
             >
-              <Icon>arrow_drop_down</Icon>
+              <ArrowDropDown/>
             </MDBox>
           </MDBox>
         )}

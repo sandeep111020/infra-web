@@ -1,6 +1,7 @@
 
 
 // @mui material components
+import { ArrowUpward } from "@mui/icons-material";
 import Card from "@mui/material/Card";
 import Icon from "@mui/material/Icon";
 
@@ -21,7 +22,7 @@ function OrdersOverview() {
         <MDBox mt={0} mb={2}>
           <MDTypography variant="button" color="text" fontWeight="regular">
             <MDTypography display="inline" variant="body2" verticalAlign="middle">
-              <Icon sx={{ color: ({ palette: { success } }) => success.main }}>arrow_upward</Icon>
+             <ArrowUpward/>
             </MDTypography>
             &nbsp;
             <MDTypography variant="button" color="text" fontWeight="medium">

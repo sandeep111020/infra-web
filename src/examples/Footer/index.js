@@ -13,6 +13,7 @@ import MDTypography from "components/MDTypography";
 
 // Material Dashboard 2 React base styles
 import typography from "assets/theme/base/typography";
+import { Favorite } from "@mui/icons-material";
 
 function Footer({ company, links }) {
   const { href, name } = company;
@@ -49,9 +50,7 @@ function Footer({ company, links }) {
       >
         &copy; {new Date().getFullYear()}, made with
         <MDBox fontSize={size.md} color="text" mb={-0.5} mx={0.25}>
-          <Icon color="inherit" fontSize="inherit">
-            favorite
-          </Icon>
+          <Favorite/>
         </MDBox>
         by
         <Link href={href} target="_blank">

@@ -39,6 +39,7 @@ import {
   setMiniSidenav,
   setOpenConfigurator,
 } from "context";
+import { AccountCircle, NotificationImportantRounded, Settings } from "@mui/icons-material";
 
 function DashboardNavbar({ absolute, light, isMini }) {
   const [navbarType, setNavbarType] = useState();
@@ -128,7 +129,7 @@ function DashboardNavbar({ absolute, light, isMini }) {
             <MDBox color={light ? "white" : "inherit"}>
               <Link to="/authentication/sign-in/basic">
                 <IconButton sx={navbarIconButton} size="small" disableRipple>
-                  <Icon sx={iconsStyle}>account_circle</Icon>
+                  <AccountCircle/>
                 </IconButton>
               </Link>
               <IconButton
@@ -149,7 +150,7 @@ function DashboardNavbar({ absolute, light, isMini }) {
                 sx={navbarIconButton}
                 onClick={handleConfiguratorOpen}
               >
-                <Icon sx={iconsStyle}>settings</Icon>
+                <Settings/>
               </IconButton>
               <IconButton
                 size="small"
@@ -161,7 +162,7 @@ function DashboardNavbar({ absolute, light, isMini }) {
                 variant="contained"
                 onClick={handleOpenMenu}
               >
-                <Icon sx={iconsStyle}>notifications</Icon>
+                <NotificationImportantRounded/>
               </IconButton>
               {renderMenu()}
             </MDBox>
