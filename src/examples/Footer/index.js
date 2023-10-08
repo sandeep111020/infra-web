@@ -16,7 +16,8 @@ import typography from "assets/theme/base/typography";
 import { Favorite } from "@mui/icons-material";
 
 function Footer({ company, links }) {
-  const { href, name } = company;
+  const { href } = company;
+  const name = "InfraVision Techis"
   const { size } = typography;
 
   const renderLinks = () =>
@@ -85,9 +86,9 @@ function Footer({ company, links }) {
 
 // Setting default values for the props of Footer
 Footer.defaultProps = {
-  company: { href: "https://www.creative-tim.com/", name: "Creative Tim" },
+  company: { href: "https://www.creative-tim.com/", name: "InfraVision Techis" },
   links: [
-    { href: "https://www.creative-tim.com/", name: "Creative Tim" },
+    { href: "https://www.creative-tim.com/", name: "Developer COntact" },
     { href: "https://www.creative-tim.com/presentation", name: "About Us" },
     { href: "https://www.creative-tim.com/blog", name: "Blog" },
     { href: "https://www.creative-tim.com/license", name: "License" },

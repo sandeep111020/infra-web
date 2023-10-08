@@ -35,8 +35,8 @@ function Dashboard() {
               <ComplexStatisticsCard
                 color="dark"
                 icon="weekend"
-                title="Insitutes"
-                count={2810}
+                title="Govt Hospital"
+                count={25778}
                 percentage={{
                   color: "success",
                   amount: "+5%",
@@ -49,8 +49,8 @@ function Dashboard() {
             <MDBox mb={1.5}>
               <ComplexStatisticsCard
                 icon="leaderboard"
-                title="Total Students"
-                count="2,30,034"
+                title="Private Hosptal"
+                count="30,034"
                 percentage={{
                   color: "success",
                   amount: "+3%",
@@ -64,8 +64,8 @@ function Dashboard() {
               <ComplexStatisticsCard
                 color="success"
                 icon="store"
-                title="Revenue"
-                count="34CR"
+                title="Medical Colleges"
+                count="500"
                 percentage={{
                   color: "success",
                   amount: "+1%",
@@ -79,7 +79,7 @@ function Dashboard() {
               <ComplexStatisticsCard
                 color="primary"
                 icon="person_add"
-                title="No Of Teachers"
+                title="Medical Camps"
                 count="60000"
                 percentage={{
                   color: "success",
@@ -96,8 +96,8 @@ function Dashboard() {
               <MDBox mb={3}>
                 <ReportsBarChart
                   color="info"
-                  title="Attendence"
-                  description="Average attendence"
+                  title="Estiamtion of Patients"
+                  description="Average Percentage on Days"
                   date="campaign sent 2 days ago"
                   chart={reportsBarChartData}
                 />
@@ -106,26 +106,26 @@ function Dashboard() {
             <Grid item xs={12} md={6} lg={4}>
               <MDBox mb={3}>
                 <ReportsLineChart
-                  color="success"
-                  title="SSC Pass Analysis"
+                  color="dark"
+                  title="Death Rate Analysis"
                   description={
                     <>
-                      (<strong>+15%</strong>) increase in today sales.
+                      (<strong>+15%</strong>) increase in today.
                     </>
                   }
                   date="updated 4 min ago"
-                  chart={sales}
+                  chart={tasks}
                 />
               </MDBox>
             </Grid>
             <Grid item xs={12} md={6} lg={4}>
               <MDBox mb={3}>
                 <ReportsLineChart
-                  color="dark"
+                  color="success"
                   title="Graduation Pass Analysis"
                   description="Last Campaign Performance"
                   date="just updated"
-                  chart={tasks}
+                  chart={sales}
                 />
               </MDBox>
             </Grid>

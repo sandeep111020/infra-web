@@ -66,7 +66,7 @@ export default function data() {
 
     rows: [
       {
-        companies: <Company image={logoXD} name="Material UI XD Version" />,
+        companies: <Company image={logoXD} name="Gandhi University" />,
         members: (
           <MDBox display="flex" py={1}>
             {avatars([
@@ -89,7 +89,7 @@ export default function data() {
         ),
       },
       {
-        companies: <Company image={logoAtlassian} name="Add Progress Track" />,
+        companies: <Company image={logoAtlassian} name="Nehru Hospital" />,
         members: (
           <MDBox display="flex" py={1}>
             {avatars([
@@ -110,7 +110,7 @@ export default function data() {
         ),
       },
       {
-        companies: <Company image={logoSlack} name="Fix Platform Errors" />,
+        companies: <Company image={logoSlack} name="Jeevan University" />,
         members: (
           <MDBox display="flex" py={1}>
             {avatars([
@@ -131,7 +131,7 @@ export default function data() {
         ),
       },
       {
-        companies: <Company image={logoSpotify} name="Launch our Mobile App" />,
+        companies: <Company image={logoSpotify} name="Life Hospitals" />,
         members: (
           <MDBox display="flex" py={1}>
             {avatars([
@@ -154,7 +154,7 @@ export default function data() {
         ),
       },
       {
-        companies: <Company image={logoJira} name="Add the New Pricing Page" />,
+        companies: <Company image={logoJira} name="Add Health Hosptials" />,
         members: (
           <MDBox display="flex" py={1}>
             {avatars([[team4, "Jessica Doe"]])}
@@ -172,7 +172,7 @@ export default function data() {
         ),
       },
       {
-        companies: <Company image={logoInvesion} name="Redesign New Online Shop" />,
+        companies: <Company image={logoInvesion} name="Shubham Hospitals" />,
         members: (
           <MDBox display="flex" py={1}>
             {avatars([
