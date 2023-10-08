@@ -36,7 +36,7 @@ import configs from "examples/Charts/PieChart/configs";
 ChartJS.register(ArcElement, Tooltip, Legend);
 
 function PieChart({ icon, title, description, height, chart }) {
-  const { data, options } = configs(chart.labels || [], chart.datasets || {});
+  const { data } = configs(chart.labels || []);
 
   const renderChart = (
     <MDBox py={2} pr={2} pl={icon.component ? 1 : 2}>
@@ -73,7 +73,7 @@ function PieChart({ icon, title, description, height, chart }) {
       {useMemo(
         () => (
           <MDBox height={height}>
-            <Pie data={data} options={options} redraw />
+            <Pie  data={data}  />
           </MDBox>
         ),
         [chart, height]

@@ -21,9 +21,10 @@ import reportsLineChartData from "layouts/dashboard/data/reportsLineChartData";
 // Dashboard components
 import Projects from "layouts/dashboard/components/Projects";
 import OrdersOverview from "layouts/dashboard/components/OrdersOverview";
+import DefaultDoughnutChart from "examples/Charts/DoughnutCharts/DefaultDoughnutChart";
 
 function Dashboard() {
-  const { sales, tasks } = reportsLineChartData;
+  const { sales, tasks,crops } = reportsLineChartData;
 
   return (
     <DashboardLayout>
@@ -107,7 +108,7 @@ function Dashboard() {
               <MDBox mb={3}>
                 <ReportsLineChart
                   color="success"
-                  title="SSC Pass Analysis"
+                  title="Weather Analysis"
                   description={
                     <>
                       (<strong>+15%</strong>) increase in today sales.
@@ -120,12 +121,12 @@ function Dashboard() {
             </Grid>
             <Grid item xs={12} md={6} lg={4}>
               <MDBox mb={3}>
-                <ReportsLineChart
-                  color="dark"
-                  title="Graduation Pass Analysis"
+                <DefaultDoughnutChart
+                  color="primary"
+                  title=" Crop Analysis"
                   description="Last Campaign Performance"
-                  date="just updated"
-                  chart={tasks}
+                  height="just updated"
+                  chart={crops}
                 />
               </MDBox>
             </Grid>
